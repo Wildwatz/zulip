@@ -54,7 +54,7 @@ import ujson
 from six.moves import range
 from typing import Any, Optional, Text
 
-class TopicHistoryTest(ZulipTestCase):
+ class TopicHistoryTest(ZulipTestCase):
     def test_topics_history(self):
         # type: () -> None
         # verified: int(UserMessage.flags.read) == 1
