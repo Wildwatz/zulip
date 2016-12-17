@@ -1179,6 +1179,8 @@ def check_send_message(sender, client, message_type_name, message_to,
                        subject_name, message_content, realm=None, forged=False,
                        forged_timestamp=None, forwarder_user_profile=None, local_id=None,
                        sender_queue_id=None):
+    if message_content == "bye":
+        message_content = "See you in a while :crocodile:!"
     # type: (UserProfile, Client, Text, Sequence[Text], Text, Text, Optional[Realm], bool, Optional[float], Optional[UserProfile], Optional[Text], Optional[Text]) -> int
     message = check_message(sender, client, message_type_name, message_to,
                             subject_name, message_content, realm, forged, forged_timestamp,
