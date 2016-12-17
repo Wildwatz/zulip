@@ -37,7 +37,7 @@ zproject/test_settings.py
 """.split()
 
 @contextmanager
- def bright_red_output():
+def bright_red_output():
     # type: () -> Iterator[None]
     # Make the lint output bright red
     sys.stdout.write('\x1B[1;31m')
