@@ -1669,7 +1669,7 @@ class CheckMessageTest(ZulipTestCase):
         self.assertEqual(new_count, old_count + 2)
         self.assertEqual(ret['message'].sender.email, 'othello-bot@zulip.com')
         self.assertIn("there are no subscribers to that stream", most_recent_message(parent).content)
-        
+
 class CrocodileTest(ZulipTestCase):
     def test_change_bye_message(self):
         # type: () -> None
